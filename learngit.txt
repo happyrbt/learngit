@@ -1,0 +1,31 @@
+      Git基本指令合集
+	  
+	  输入用户名和邮箱：$git config --global user.name "用户名"
+	  	                    $git config --global user.email "email@``"
+	  建立新的版本库：
+	   1、创建目录:$mkdir <file>
+	   2、进入：cd <文件夹>
+	   3、查看当前目录：pwd                          tips:linux中/用于路径，\为转义，-以及--用于参数
+	   
+	  删除的相关操作：
+	   1、删除文件：rm <file>
+	   2、删除文件夹：rmdir <wenianjia>
+	 
+	 将文件移入暂存区：git add <file>
+	  
+	 将暂存区的文件移入版本库：git commit -m “备注”  
+	  1、-m后加备注方便以后查看和更改
+	  
+	 查看工作区和暂存区的状态：git status
+	 
+	 查看版本库记录：git log   此即查询版本号和版本备注只显示此时的，若有查看过去和未来的，请查看git reflog
+	    1、简化:git log --pretty=oneline
+	 
+	 查看所有暂存区和版本库改变的记录以及其所对应的版本号和版本备注：git reflog//刚打开git bash时方便
+	 
+	 指定穿梭：git reset --hard 版本号
+	   1、特殊：git reset --hard HEAD^//返回上一版本库的状态，同时改变工作区的数据据
+	   
+	 查看某文件在版本库和工作区的差别：git diff --HEAD <file>   
+	   
+	   

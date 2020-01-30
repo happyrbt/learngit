@@ -1,1 +1,2 @@
-rubbish
+rubbish、
+to understand diff
